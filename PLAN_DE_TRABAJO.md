@@ -47,18 +47,99 @@ cafe-esmeraldita/
 
 ## 🎨 Identidad Visual (Propuesta)
 
-- **Paleta de colores:** tonos tierra y café (marrón, crema, verde esmeralda como acento).
-  - Verde esmeralda: `#0F9D58` (hace alusión al nombre "Esmeraldita")
-  - Marrón café: `#6F4E37`
-  - Crema: `#F5EFE6`
-  - Oscuro: `#2B1D12`
-  - Café oscuro (grano tostado): `#3E2723`
-  - Café claro (latte): `#A1887F`
-  - Verde esmeralda oscuro: `#0B7A45`
-  - Verde hoja (cafetal): `#2E7D32`
-  - Ámbar / caramelo: `#D2691E`
-  - Dorado: `#C9A227`
-  - Terracota: `#B5651D`
+### 🟤 Paleta de colores SERIA (extraída de las imágenes reales)
+
+Se ejecutó el script `extraer_colores.py` sobre las 5 imágenes del café en `img/`, y se obtuvieron los siguientes colores dominantes:
+
+| Imagen | Colores dominantes |
+|--------|-------------------|
+| **Imagen 1** | `#EFDBCA` (beige), `#553F19` (marrón oscuro), `#00192C` (azul marino), `#05506B` (azul petróleo) |
+| **Imagen 2** | `#FEFEFE` (blanco), `#9F0015` (rojo oscuro), `#3E551C` (verde oliva), `#FDE9BE` (crema) |
+| **Imagen 3** | `#FBC18C` (naranja claro), `#974920` (marrón anaranjado), `#3B0F05` (marrón muy oscuro), `#783211` (marrón rojizo) |
+| **Imagen 4** | `#F2D5B5` (beige), `#EEE8E3` (gris claro), `#53250B` (marrón oscuro), `#603614` (marrón) |
+| **Imagen 5** | `#2E370B` (verde oscuro), `#FDF4E4` (blanco crema), `#4F5114` (verde oliva), `#8C8540` (verde oliva claro) |
+
+**Paleta seria y sobria** derivada de estas imágenes (para un diseño simple, elegante y profesional):
+
+| Color | Código HEX | Uso |
+|-------|-----------|-----|
+| **Café muy oscuro (grano tostado)** | `#3B0F05` | Fondos, textos principales, footer |
+| **Café oscuro** | `#53250B` | Títulos, secciones oscuras |
+| **Café medio** | `#603614` | Botones secundarios, detalles |
+| **Café rojizo** | `#783211` | Acentos, hover |
+| **Café anaranjado** | `#974920` | Detalles cálidos |
+| **Crema (espuma de leche)** | `#EFDBCA` | Fondo principal de la página |
+| **Blanco crema** | `#FDF4E4` | Fondo de secciones alternas |
+| **Beige** | `#F2D5B5` | Tarjetas, bordes |
+| **Verde oliva oscuro** | `#2E370B` | Sección de origen/cafetal |
+| **Verde oliva** | `#3E551C` | Acentos de naturaleza |
+| **Verde oliva claro** | `#4F5114` | Detalles de hojas |
+| **Dorado** | `#C9A227` | Detalles premium, sellos |
+
+### 🎨 Resumen de la Paleta SERIA (CSS)
+
+```css
+:root {
+  /* Tonos de café (extraídos de las imágenes) */
+  --cafe-oscuro: #3B0F05;
+  --cafe-muy-oscuro: #280903;
+  --cafe-medio: #603614;
+  --cafe-rojizo: #783211;
+  --cafe-anaranjado: #974920;
+  --cafe-claro: #8C8540;
+
+  /* Crema y beige (fondos) */
+  --crema: #EFDBCA;
+  --blanco-crema: #FDF4E4;
+  --beige: #F2D5B5;
+
+  /* Verde oliva (hojas/plantas) */
+  --verde-oscuro: #2E370B;
+  --verde-oliva: #3E551C;
+  --verde-claro: #4F5114;
+
+  /* Acentos */
+  --dorado: #C9A227;
+  --terracota: #B5651D;
+}
+```
+
+### 🧭 Cómo usar los colores serios por sección
+
+- **Hero / Portada:** fondo café muy oscuro `#3B0F05` con texto crema y botón dorado.
+- **Nuestro Café:** fondo crema `#EFDBCA`, tarjetas beige `#F2D5B5`.
+- **Origen (Tello, Huila):** verde oliva oscuro `#2E370B` como acento, fotos del paisaje.
+- **Mujeres Campesinas:** café rojizo `#783211` y dorado `#C9A227` para transmitir calidez y empoderamiento.
+- **Proceso:** línea de tiempo con café medio `#603614` y dorado para los pasos.
+- **Galería:** fondo blanco crema `#FDF4E4` para que las fotos resalten.
+- **Contacto:** botones café medio `#603614` y acentos dorados.
+- **Footer:** café muy oscuro `#3B0F05` con texto crema.
+
+### ✨ Consejos de contraste y accesibilidad
+
+- Texto sobre fondo café oscuro → usar crema o blanco.
+- Texto sobre fondo crema → usar café oscuro `#3B0F05`.
+- Botones CTA → café medio `#603614` con texto blanco.
+- Evitar usar verde oliva sobre verde oliva (bajo contraste).
+- **Tipografía:** fuentes legibles y cálidas (ej. `Poppins` para títulos, `Lato` para texto).
+- **Estilo:** limpio, natural, sobrio y profesional, con fotografía real del café, la región y las mujeres campesinas.
+
+---
+
+### 🖼️ Imágenes reales a usar en la página
+
+Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.photos`:
+
+| Sección | Imagen a usar |
+|---------|---------------|
+| **Hero / Portada** | `img/Imagen 3 cafe.jpeg` (tonos de café tostado) |
+| **Nuestro Café (producto)** | `img/Imagen 4 cafe.jpeg` |
+| **Origen (Tello, Huila)** | `img/Imagen 5 cafe.jpeg` (verdes de cafetal) |
+| **Mujeres Campesinas** | `img/Imagen 2 cafe.jpeg` |
+| **Galería (carrusel)** | Todas las 5 imágenes |
+| **Testimonios / fondo** | `img/Imagen 1 cafe.jpeg` |
+
+> ⚠️ **Nota:** Las rutas deben ser relativas (`img/Imagen 3 cafe.jpeg`) para que funcionen en GitHub Pages. Los nombres de archivo contienen espacios, por lo que en HTML deben escaparse como `img/Imagen%203%20cafe.jpeg` o renombrar los archivos sin espacios (recomendado: `img/imagen-3-cafe.jpeg`).
 
 ### 🟤 Colores Principales (tonos de café)
 
