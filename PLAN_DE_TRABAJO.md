@@ -212,6 +212,220 @@ Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.ph
 
 ---
 
+## 🎨 Guía de Diseño UI/UX — Línea Gráfica Oficial (Café Emeraldita)
+
+> **Nota:** Esta es la **línea gráfica definitiva y oficial** de la marca, basada en la identidad visual del logotipo (oso amigable con taza de café, montañas, flores blancas y frutos rojos). **Prevalece sobre las paletas anteriores** de esta sección. Usar estos códigos exactos para mantener coherencia visual.
+
+### 🎯 Concepto y Dirección de Arte
+
+**Frase rectora:** *"Rústico, campestre y artesanal, con la sobriedad de un producto premium."*
+
+| Atributo | Directriz |
+|----------|-----------|
+| **Tono emocional** | Acogedor, cálido, confiable, de origen |
+| **Estilo** | Orgánico, artesanal, con texturas naturales |
+| **Calidad percibida** | Alta, profesional, de especialidad |
+| **Referentes visuales** | Costal de yute, papel kraft, montañas al atardecer, granos tostados |
+
+**Regla de oro:** Cada pieza debe sentirse *hecha a mano*, pero con acabado impecable. Nada de brillos artificiales ni degradados digitales fríos.
+
+### 🟤 Paleta de Colores Oficial (Códigos Exactos)
+
+#### Tonos Base / Fondo
+| Nombre | Hex | Uso |
+|--------|-----|-----|
+| **Crema Suave** | `#F7F4EF` | Fondo principal de la página |
+| **Arena / Kraft** | `#E6D7C3` | Secciones alternas, tarjetas, texturas de yute |
+
+#### Texto y Contraste
+| Nombre | Hex | Uso |
+|--------|-----|-----|
+| **Espresso Profundo** | `#2C1D11` | Texto principal, títulos secundarios, máxima legibilidad |
+
+#### Tonos de Acento
+| Nombre | Hex | Uso |
+|--------|-----|-----|
+| **Azul Petróleo** | `#1B4965` | Fondos de títulos, botones, CTA, enlaces |
+| **Rojo Cereza / Vino** | `#A62B2B` | Frutos maduros, acentos, badges, detalles |
+
+#### Tonos Naturales
+| Nombre | Hex | Uso |
+|--------|-----|-----|
+| **Verde Hoja / Pino** | `#2D5A27` | Sellos ecológicos, "100% Orgánico", iconos de naturaleza |
+
+#### Escala de apoyo (derivada)
+| Nombre | Hex | Uso |
+|--------|-----|-----|
+| **Café Medio** | `#6B4A2F` | Bordes suaves, sombras, separadores |
+| **Crema Oscura** | `#D9C7AE` | Hover de tarjetas, fondos de badges |
+| **Blanco Cálido** | `#FFFFFF` | Texto sobre fondos oscuros (azul/rojo) |
+
+> **Regla de contraste:** Texto espresso (`#2C1D11`) siempre sobre fondos claros. Texto blanco solo sobre azul petróleo, rojo vino o verde pino. Cumple WCAG AA.
+
+#### Resumen de la Paleta Oficial (CSS)
+
+```css
+:root {
+  /* Tonos base / fondo */
+  --crema-suave: #F7F4EF;
+  --arena-kraft: #E6D7C3;
+
+  /* Texto y contraste */
+  --espresso: #2C1D11;
+
+  /* Acentos */
+  --azul-petroleo: #1B4965;
+  --rojo-cereza: #A62B2B;
+
+  /* Naturales */
+  --verde-pino: #2D5A27;
+
+  /* Escala de apoyo */
+  --cafe-medio: #6B4A2F;
+  --crema-oscura: #D9C7AE;
+  --blanco-calido: #FFFFFF;
+}
+```
+
+### 🔤 Tipografía Oficial
+
+#### Títulos (Display / Palo Seco Grueso)
+- **Estilo:** Sans-serif gruesa, contundente, con impacto de sello o brochazo artesanal.
+- **Sugerencias:** `Archivo Black`, `Anton`, `Bebas Neue`, `Montserrat ExtraBold`.
+- **Uso:** H1 del hero, títulos de sección, nombres de producto.
+- **Tratamiento:** MAYÚSCULAS, letter-spacing ligero (0.5–1px), peso 800–900.
+
+#### Texto y Descripciones (Body)
+- **Estilo:** Moderna, limpia, altamente legible.
+- **Sugerencias:** `Poppins`, `Inter`.
+- **Uso:** Párrafos, subtítulos, navegación, botones, formularios.
+- **Pesos:** Regular (400) para cuerpo, Medium (500) y SemiBold (600) para énfasis.
+
+#### Jerarquía tipográfica sugerida
+| Elemento | Fuente | Peso | Tamaño (desktop) |
+|----------|--------|------|------------------|
+| H1 Hero | Display | 900 | 56–72px |
+| H2 Sección | Display | 800 | 40–48px |
+| H3 Tarjeta | Display | 700 | 24–28px |
+| Body | Poppins/Inter | 400 | 16–18px |
+| Caption / Badge | Poppins | 600 | 12–14px |
+
+### 🖼️ Elementos Gráficos Clave
+
+#### Logotipo (Oso + Café)
+- **Formato:** Circular, sello.
+- **Contenido:** Oso amigable con taza humeante, montañas, flores blancas de café y frutos rojos.
+- **Uso:** Header (esquina superior), footer, favicon, sello de producto.
+- **Regla:** Mantener siempre sobre fondo claro o dentro de un círculo de color sólido. No distorsionar ni cambiar colores.
+
+#### Insignias / Sellos Circulares
+| Insignia | Colores | Ubicación |
+|----------|---------|-----------|
+| **"Hecho con amor por mujeres campesinas"** | Verde pino `#2D5A27` + crema | Hero, sección beneficios, footer |
+| **"100% Orgánico"** | Verde pino `#2D5A27` + crema | Vitrina de producto, junto a cada empaque |
+
+- **Formato:** Sello circular con borde doble, texto curvado (opcional) o recto.
+- **Efecto:** Ligera rotación (-8° a -12°) para sensación artesanal.
+
+#### Paisaje del Huila al Atardecer
+- **Uso:** Fondo del Hero Banner y separadores de sección.
+- **Paleta del paisaje:** Tonos cálidos (naranja/ámbar del atardecer) que armonicen con la crema y el café, con siluetas de montañas en capas.
+- **Tratamiento:** Overlay oscuro (espresso `#2C1D11` al 40–60%) sobre el paisaje para garantizar legibilidad del texto.
+
+#### Vitrina de Producto (Empaque Doypack)
+- **Elementos:** Empaque *Doypack* con ilustración del oso, granos tostados, notas de sabor.
+- **Notas de sabor a destacar:** *"Mezcla de Altura"*, *"Café Emeraldita"*.
+- **Presentación:** Tarjetas de producto con foto del empaque, nombre, descripción de notas, precio y botón de compra/WhatsApp.
+
+### 🧱 Estructura Visual (Wireframe)
+
+#### Hero Banner
+```
+┌─────────────────────────────────────────────┐
+│  [Logo Oso]        [Nav: Inicio|Producto|Contacto] │
+│                                             │
+│   PAISAJE DEL HUILA AL ATARDECER (fondo)    │
+│   ─────────────────────────────────────     │
+│   H1: Café Artesanal del Huila              │
+│   Subtítulo: Origen campesino, sabor de altura│
+│   [Botón WhatsApp 312 472 4794]             │
+│   [Sello: Hecho con amor por mujeres campesinas]│
+│                                             │
+└─────────────────────────────────────────────┘
+```
+
+#### Sección de Beneficios (3 Tarjetas)
+```
+┌──────────────┬──────────────┬──────────────┐
+│  [Icono]     │  [Icono]     │  [Icono]     │
+│  Cosecha     │  De las      │  Apoya a     │
+│  Selecta     │  Montañas    │  Mujeres     │
+│              │  del Huila   │  Campesinas  │
+└──────────────┴──────────────┴──────────────┘
+```
+- **Fondo:** Crema `#F7F4EF` o arena `#E6D7C3` alternado.
+- **Iconos:** Línea fina, color verde pino o café medio.
+
+#### Vitrina de Producto
+```
+┌─────────────────────────────────────────────┐
+│  H2: Nuestro Café                           │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  │
+│  │ Empaque  │  │ Empaque  │  │ Empaque  │  │
+│  │ Doypack  │  │ Doypack  │  │ Doypack  │  │
+│  │ + Granos │  │ + Granos │  │ + Granos │  │
+│  │ Notas    │  │ Notas    │  │ Notas    │  │
+│  │ [Comprar]│  │ [Comprar]│  │ [Comprar]│  │
+│  └──────────┘  └──────────┘  └──────────┘  │
+│  [Sello: 100% Orgánico]                    │
+└─────────────────────────────────────────────┘
+```
+
+#### Sección de Contacto
+```
+┌─────────────────────────────────────────────┐
+│  H2: Contáctanos                            │
+│  Ubicación: Conjunto Morichal               │
+│  Teléfono: 312 472 4794                     │
+│  [Botón WhatsApp]                           │
+│  [Mapa / Ubicación]                         │
+└─────────────────────────────────────────────┘
+```
+
+#### Botón Flotante de WhatsApp
+- **Posición:** Esquina inferior derecha.
+- **Color:** Verde WhatsApp (`#25D366`) o azul petróleo `#1B4965` con icono de WhatsApp.
+- **Siempre visible** en todas las secciones.
+
+### 🎛️ Componentes y Estados de Interacción
+
+| Componente | Normal | Hover | Activo |
+|------------|--------|-------|--------|
+| **Botón primario** | Azul petróleo `#1B4965`, texto blanco | Oscurecer a `#14384E` | Sombra reducida |
+| **Botón WhatsApp** | Verde `#25D366` | Verde más oscuro | Presionado |
+| **Tarjeta producto** | Fondo crema, borde sutil | Elevación + sombra, borde café | Seleccionada |
+| **Enlaces** | Café espresso `#2C1D11` | Rojo vino `#A62B2B` | Subrayado |
+
+### 📐 Reglas de Composición y Espaciado
+
+- **Grid:** 12 columnas, gutter de 24px, margen lateral 80px (desktop).
+- **Radio de esquinas:** 12–16px en tarjetas (orgánico, no excesivamente redondeado).
+- **Sombras:** Suaves, cálidas (`rgba(44,29,17,0.12)`), nunca negras puras.
+- **Texturas:** Papel kraft / yute aplicadas como fondo sutil en secciones alternas.
+- **Respiración:** Espaciado vertical generoso (80–120px entre secciones).
+
+### ✅ Checklist de Coherencia Visual
+
+- [ ] Logotipo del oso siempre sobre fondo claro o círculo sólido.
+- [ ] Texto espresso sobre fondos claros; blanco sobre azul/rojo/verde.
+- [ ] Sellos circulares con rotación artesanal ligera.
+- [ ] Paisaje del Huila con overlay oscuro para legibilidad.
+- [ ] Botón de WhatsApp visible en todo momento.
+- [ ] Notas de sabor ("Mezcla de Altura", "Café Emeraldita") visibles en la vitrina.
+- [ ] Ubicación (Conjunto Morichal) y teléfono (312 472 4794) en contacto y footer.
+
+---
+
 ## 🧩 Secciones de la Página (index.html)
 
 1. **Barra de navegación (Navbar)**
