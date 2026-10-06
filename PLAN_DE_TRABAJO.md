@@ -487,22 +487,26 @@ Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.ph
 
 ## 🗓️ Fases del Trabajo (Cronograma)
 
-### Fase 1 — Preparación (Día 1)
-- [ ] Definir textos y contenido final (copywriting), incluyendo la historia de las mujeres campesinas
-- [ ] Recopilar fotografías reales del café, de Tello, Huila y de las mujeres campesinas
-- [ ] Crear o conseguir el logo de la marca
-- [ ] Definir paleta de colores y tipografías definitivas
+### Fase 1 — Preparación (Día 1) ✅ COMPLETADA
+> 📄 **Documento de referencia:** `docs/FASE_1_PREPARACION.md` (copywriting final, mapeo de imágenes, identidad visual consolidada)
 
-### Fase 2 — Estructura HTML (Día 2)
-- [ ] Crear `index.html` con todas las secciones
-- [ ] Estructura semántica correcta (header, main, section, footer)
-- [ ] Insertar textos e imágenes provisionales
+- [x] Definir textos y contenido final (copywriting), incluyendo la historia de las mujeres campesinas
+- [x] Recopilar fotografías reales del café, de Tello, Huila y de las mujeres campesinas (en `img/`)
+- [x] Crear o conseguir el logo de la marca (`img/Logo.jpeg`)
+- [x] Definir paleta de colores y tipografías definitivas (línea gráfica oficial)
 
-### Fase 3 — Estilos CSS (Día 3-4)
-- [ ] Crear `css/styles.css`
-- [ ] Diseño responsive (mobile-first)
-- [ ] Aplicar paleta de colores y tipografías
-- [ ] Estilizar todas las secciones y componentes
+> **Pendiente para Fase 2:** Renombrar imágenes sin espacios (`img/logo.jpeg`, `img/hero.jpeg`, `img/producto.jpeg`, `img/origen.jpeg`, `img/mujeres.jpeg`) y actualizar `index.html` con rutas reales y textos finales.
+
+### Fase 2 — Estructura HTML (Día 2) 🔄 EN CURSO
+- [x] Crear `index.html` con todas las secciones (ya existe)
+- [x] Estructura semántica correcta (header, main, section, footer) (ya existe)
+- [ ] Insertar textos e imágenes provisionales → **PENDIENTE:** actualizar con textos finales y rutas de imágenes reales (aún usa placeholders `picsum.photos`)
+
+### Fase 3 — Estilos CSS (Día 3-4) 🔄 EN CURSO
+- [x] Crear `css/styles.css` (ya existe)
+- [x] Diseño responsive (mobile-first) (ya implementado)
+- [ ] Aplicar paleta de colores y tipografías → **PENDIENTE:** el CSS aún usa la paleta "esmeralda" anterior, falta aplicar la línea gráfica oficial (crema `#F7F4EF`, espresso `#2C1D11`, azul petróleo `#1B4965`, rojo vino `#A62B2B`, verde pino `#2D5A27`)
+- [x] Estilizar todas las secciones y componentes (ya implementado)
 
 ### Fase 4 — Interactividad JS (Día 5)
 - [ ] Crear `js/main.js`
