@@ -552,10 +552,10 @@ Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.ph
 - [x] Aplicar paleta de colores y tipografías → **COMPLETADO:** el CSS ya usa la línea gráfica oficial (crema `#F7F4EF`, espresso `#2C1D11`, azul petróleo `#1B4965`, rojo vino `#A62B2B`, verde pino `#2D5A27`) y las tipografías `Archivo Black` (títulos) y `Poppins` (texto)
 - [x] Estilizar todas las secciones y componentes (ya implementado)
 
-### Fase 4 — Interactividad JS (Día 5)
-- [ ] Crear `js/main.js`
-- [ ] Implementar todas las funcionalidades listadas arriba
-- [ ] Probar en distintos tamaños de pantalla
+### Fase 4 — Interactividad JS (Día 5) ✅ COMPLETADA
+- [x] Crear `js/main.js` → **COMPLETADO:** se creó el archivo con todas las funcionalidades
+- [x] Implementar todas las funcionalidades listadas arriba → **COMPLETADO:** menú hamburguesa responsive, navegación suave, animaciones de aparición al hacer scroll (Intersection Observer), carrusel de la galería con autoplay, validación del formulario de contacto, barra de navegación sticky al hacer scroll y contador animado de estadísticas
+- [x] Probar en distintos tamaños de pantalla → **COMPLETADO:** se revisaron y ajustaron los media queries (992px, 768px, 480px) para imágenes, tipografías, botones y elementos en tablet y móvil
 
 ### Fase 5 — Pruebas y Pulido (Día 6)
 - [ ] Revisar compatibilidad en navegadores
