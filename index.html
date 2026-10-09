@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Café Emeraldita - Café Artesanal del Huila, cultivado en Tello, Huila y elaborado por mujeres campesinas. Descubre el sabor único de nuestro café de altura.">
+    <meta name="theme-color" content="#2C1D11">
+    <meta property="og:title" content="Café Emeraldita | Café Artesanal del Huila">
+    <meta property="og:description" content="Café de especialidad cultivado en Tello, Huila y elaborado por mujeres campesinas. Pídelo por WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.jpeg">
     <title>Café Emeraldita | Café Artesanal del Huila</title>
 
     <!-- Fuentes de Google -->
@@ -90,7 +95,7 @@
 
             <div class="product-showcase">
                 <div class="product-image">
-                    <img src="img/Imagen1%20cafe.jpeg" alt="Café Emeraldita - Mezcla de Altura" loading="lazy">
+                    <img src="img/Imagen1%20cafe.jpeg" alt="Café Emeraldita - Mezcla de Altura" loading="lazy" width="800" height="400">
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Café Emeraldita — Mezcla de Altura</h3>
@@ -122,7 +127,7 @@
 
             <div class="origen-grid">
                 <div class="origen-image">
-                    <img src="img/Imagen2cafe.jpeg" alt="Paisaje de Tello, Huila" loading="lazy">
+                    <img src="img/Imagen2cafe.jpeg" alt="Paisaje de Tello, Huila" loading="lazy" width="800" height="500">
                 </div>
                 <div class="origen-info">
                     <h3 class="origen-title">¿Por qué es especial Tello?</h3>
@@ -191,7 +196,7 @@
                     </div>
                 </div>
                 <div class="mujeres-image">
-                    <img src="img/Imagen4cafe.jpeg" alt="Mujeres campesinas cultivando café" loading="lazy">
+                    <img src="img/Imagen4cafe.jpeg" alt="Mujeres campesinas cultivando café" loading="lazy" width="800" height="600">
                 </div>
             </div>
         </div>
@@ -279,7 +284,8 @@
                 </div>
                 <button class="carousel-btn carousel-prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
                 <button class="carousel-btn carousel-next" id="nextBtn" aria-label="Siguiente">&#10095;</button>
-            </div>
+                <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Navegación de la galería"></div>
+              </div>
         </div>
     </section>
 
@@ -379,7 +385,7 @@
                         <span class="error-message" id="error-mensaje"></span>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
-                    <div class="form-success" id="formSuccess" hidden>
+                    <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
                         ✅ ¡Gracias por tu mensaje! Te contactaremos pronto.
                     </div>
                 </form>
@@ -407,9 +413,9 @@
             <div class="footer-social">
                 <h4>Síguenos</h4>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook">📘</a>
-                    <a href="#" aria-label="Instagram">📸</a>
-                    <a href="#" aria-label="WhatsApp">💬</a>
+                    <a href="https://wa.me/573124724794" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
                 </div>
             </div>
         </div>
@@ -420,7 +426,9 @@
 
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/573124724794" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Pedir por WhatsApp">
-        💬
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+            <path d="M16.004 3C8.832 3 3 8.832 3 16.004c0 2.29.6 4.53 1.74 6.51L3 29l6.63-1.71a12.94 12.94 0 0 0 6.37 1.71C23.168 29 29 23.168 29 16.004 29 8.832 23.168 3 16.004 3zm0 23.6c-1.99 0-3.94-.53-5.64-1.54l-.4-.24-3.93 1.01 1.05-3.83-.26-.41a10.6 10.6 0 0 1-1.63-5.66c0-5.86 4.77-10.63 10.63-10.63 2.84 0 5.51 1.11 7.52 3.12a10.57 10.57 0 0 1 3.11 7.52c0 5.86-4.77 10.63-10.63 10.63zm5.83-7.96c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.34-.49-2.56-1.58-.95-.85-1.59-1.9-1.77-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66 0 1.57 1.14 3.08 1.3 3.29.16.21 2.25 3.44 5.45 4.82.76.33 1.36.53 1.82.67.77.24 1.46.21 2.01.13.61-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/>
+        </svg>
     </a>
 
     <!-- Script principal -->

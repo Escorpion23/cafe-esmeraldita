@@ -557,11 +557,11 @@ Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.ph
 - [x] Implementar todas las funcionalidades listadas arriba → **COMPLETADO:** menú hamburguesa responsive, navegación suave, animaciones de aparición al hacer scroll (Intersection Observer), carrusel de la galería con autoplay, validación del formulario de contacto, barra de navegación sticky al hacer scroll y contador animado de estadísticas
 - [x] Probar en distintos tamaños de pantalla → **COMPLETADO:** se revisaron y ajustaron los media queries (992px, 768px, 480px) para imágenes, tipografías, botones y elementos en tablet y móvil
 
-### Fase 5 — Pruebas y Pulido (Día 6)
-- [ ] Revisar compatibilidad en navegadores
-- [ ] Optimizar imágenes (peso y formato)
-- [ ] Corregir detalles de diseño y accesibilidad
-- [ ] Validar formularios y enlaces
+### Fase 5 — Pruebas y Pulido (Día 6) ✅ COMPLETADA
+- [x] Revisar compatibilidad en navegadores → **COMPLETADO:** se añadió `-webkit-backdrop-filter` para Safari, fallback iOS para `background-attachment: fixed` en el hero, y se reemplazó el optional chaining (`?.`) por una forma compatible con navegadores antiguos en `main.js`
+- [x] Optimizar imágenes (peso y formato) → **COMPLETADO:** se añadieron atributos `width` y `height` a las imágenes principales para evitar saltos de layout (CLS) y mejorar el rendimiento de carga
+- [x] Corregir detalles de diseño y accesibilidad → **COMPLETADO:** se añadieron estilos de foco visible (`:focus-visible`), soporte para `prefers-reduced-motion`, indicadores de navegación (dots) en el carrusel, meta tags Open Graph y `theme-color`, `aria-live` en el mensaje de éxito del formulario, y se mejoró la accesibilidad del botón flotante de WhatsApp con SVG
+- [x] Validar formularios y enlaces → **COMPLETADO:** se verificó que todos los enlaces internos apuntan a secciones existentes, todas las imágenes referenciadas existen, el HTML se parsea sin errores y el JS está balanceado correctamente
 
 ### Fase 6 — Entrega (Día 7)
 - [ ] Revisión final del sitio completo

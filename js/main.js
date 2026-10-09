@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = document.querySelector(targetId);
             if (target) {
                 e.preventDefault();
-                const headerOffset = document.querySelector('.navbar')?.offsetHeight || 0;
+                const navbarEl = document.querySelector('.navbar');
+                const headerOffset = navbarEl ? navbarEl.offsetHeight : 0;
                 const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
                 const offsetPosition = elementPosition - headerOffset;
 
@@ -108,10 +109,37 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentIndex = 0;
         const slides = carouselTrack.querySelectorAll('.carousel-slide');
         const totalSlides = slides.length;
+        const dotsContainer = document.getElementById('carouselDots');
+
+        // Crear indicadores (dots)
+        if (dotsContainer) {
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.className = 'carousel-dot';
+                dot.setAttribute('aria-label', `Ir a la imagen ${index + 1}`);
+                dot.setAttribute('role', 'tab');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        const updateDots = () => {
+            if (dotsContainer) {
+                const dots = dotsContainer.querySelectorAll('.carousel-dot');
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+        };
 
         const updateCarousel = () => {
             const slideWidth = carouselTrack.clientWidth;
             carouselTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            updateDots();
         };
 
         const nextSlide = () => {
