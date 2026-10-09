@@ -1,30 +1,32 @@
 /* ============================================
-   CAFÉ ESMERALDITA - Hoja de estilos principal
-   Paleta de colores del café
+   CAFÉ EMERALDITA - Hoja de estilos principal
+   Línea gráfica oficial - Café Artesanal del Huila
    ============================================ */
 
-/* ---------- Variables de color ---------- */
+/* ---------- Variables de color (paleta oficial) ---------- */
 :root {
-    /* Tonos de café */
-    --cafe-oscuro: #3E2723;
-    --cafe-medio: #6F4E37;
-    --cafe-claro: #A1887F;
-    --crema: #F5EFE6;
-    --blanco-crema: #FFF8F0;
+    /* Tonos base / fondo */
+    --crema-suave: #F7F4EF;
+    --arena-kraft: #E6D7C3;
 
-    /* Verde esmeralda */
-    --esmeralda: #0F9D58;
-    --esmeralda-oscuro: #0B7A45;
-    --verde-hoja: #2E7D32;
+    /* Texto y contraste */
+    --espresso: #2C1D11;
 
-    /* Acentos cálidos */
-    --ambar: #D2691E;
-    --dorado: #C9A227;
-    --terracota: #B5651D;
+    /* Acentos */
+    --azul-petroleo: #1B4965;
+    --rojo-cereza: #A62B2B;
+
+    /* Naturales */
+    --verde-pino: #2D5A27;
+
+    /* Escala de apoyo */
+    --cafe-medio: #6B4A2F;
+    --crema-oscura: #D9C7AE;
+    --blanco-calido: #FFFFFF;
 
     /* Tipografías */
-    --font-titulos: 'Poppins', sans-serif;
-    --font-texto: 'Lato', sans-serif;
+    --font-titulos: 'Archivo Black', sans-serif;
+    --font-texto: 'Poppins', sans-serif;
 }
 
 /* ---------- Reset y base ---------- */
@@ -40,8 +42,8 @@ html {
 
 body {
     font-family: var(--font-texto);
-    color: var(--cafe-oscuro);
-    background-color: var(--crema);
+    color: var(--espresso);
+    background-color: var(--crema-suave);
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -80,7 +82,7 @@ ul {
 }
 
 .navbar.scrolled {
-    background-color: var(--cafe-oscuro);
+    background-color: var(--espresso);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -102,17 +104,17 @@ ul {
     height: 45px;
     object-fit: cover;
     border-radius: 50%;
-    background-color: var(--crema);
+    background-color: var(--crema-suave);
 }
 
 .logo-text {
     font-family: var(--font-titulos);
     font-size: 1.3rem;
-    color: var(--crema);
+    color: var(--crema-suave);
 }
 
 .logo-text strong {
-    color: var(--esmeralda);
+    color: var(--azul-petroleo);
 }
 
 .nav-list {
@@ -121,7 +123,7 @@ ul {
 }
 
 .nav-link {
-    color: var(--crema);
+    color: var(--crema-suave);
     font-weight: 400;
     font-size: 0.95rem;
     padding: 8px 0;
@@ -136,13 +138,13 @@ ul {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--esmeralda);
+    background-color: var(--azul-petroleo);
     transition: width 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--esmeralda);
+    color: var(--azul-petroleo);
 }
 
 .nav-link:hover::after,
@@ -164,7 +166,7 @@ ul {
 .bar {
     width: 28px;
     height: 3px;
-    background-color: var(--crema);
+    background-color: var(--crema-suave);
     border-radius: 3px;
     transition: all 0.3s ease;
 }
@@ -189,7 +191,7 @@ ul {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('https://picsum.photos/seed/hero/1920/1080');
+    background-image: url('../img/Imagen3.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -202,13 +204,13 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(62, 39, 35, 0.9), rgba(62, 39, 35, 0.7));
+    background: linear-gradient(135deg, rgba(44, 29, 17, 0.9), rgba(44, 29, 17, 0.7));
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-    color: var(--crema);
+    color: var(--crema-suave);
 }
 
 .hero-title {
@@ -220,14 +222,14 @@ ul {
 }
 
 .hero-title .highlight {
-    color: var(--esmeralda);
+    color: var(--rojo-cereza);
 }
 
 .hero-subtitle {
     font-size: 1.4rem;
     font-weight: 300;
     margin-bottom: 20px;
-    color: var(--dorado);
+    color: var(--rojo-cereza);
     animation: fadeInUp 1s ease 0.2s both;
 }
 
@@ -247,6 +249,38 @@ ul {
     animation: fadeInUp 1s ease 0.6s both;
 }
 
+/* ---------- Sellos circulares ---------- */
+.hero-seal {
+    margin-top: 35px;
+    animation: fadeInUp 1s ease 0.8s both;
+}
+
+.seal-badge {
+    display: inline-block;
+    background-color: var(--verde-pino);
+    color: var(--crema-suave);
+    font-family: var(--font-texto);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 2px solid var(--crema-suave);
+    letter-spacing: 0.5px;
+    transform: rotate(-3deg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-seal {
+    margin: 20px 0;
+}
+
+.seal-organic {
+    background-color: var(--verde-pino);
+    border-color: var(--verde-pino);
+    color: var(--blanco-calido);
+    transform: rotate(-3deg);
+}
+
 /* ---------- Botones ---------- */
 .btn {
     display: inline-block;
@@ -261,25 +295,25 @@ ul {
 }
 
 .btn-primary {
-    background-color: var(--esmeralda);
+    background-color: var(--azul-petroleo);
     color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: var(--esmeralda-oscuro);
+    background-color: var(--azul-petroleo);
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(15, 157, 88, 0.4);
 }
 
 .btn-outline {
     background-color: transparent;
-    color: var(--crema);
-    border-color: var(--crema);
+    color: var(--crema-suave);
+    border-color: var(--crema-suave);
 }
 
 .btn-outline:hover {
-    background-color: var(--crema);
-    color: var(--cafe-oscuro);
+    background-color: var(--crema-suave);
+    color: var(--espresso);
     transform: translateY(-3px);
 }
 
@@ -299,7 +333,7 @@ ul {
 
 .section-tag {
     display: inline-block;
-    background-color: var(--esmeralda);
+    background-color: var(--azul-petroleo);
     color: #fff;
     padding: 6px 18px;
     border-radius: 50px;
@@ -315,7 +349,7 @@ ul {
     font-family: var(--font-titulos);
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--cafe-oscuro);
+    color: var(--espresso);
     margin-bottom: 15px;
 }
 
@@ -335,7 +369,7 @@ ul {
 }
 
 .feature-card {
-    background-color: var(--blanco-crema);
+    background-color: var(--blanco-calido);
     border-radius: 15px;
     padding: 40px 30px;
     text-align: center;
@@ -356,7 +390,7 @@ ul {
 .feature-title {
     font-family: var(--font-titulos);
     font-size: 1.3rem;
-    color: var(--cafe-oscuro);
+    color: var(--espresso);
     margin-bottom: 10px;
 }
 
@@ -371,7 +405,7 @@ ul {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
-    background-color: var(--blanco-crema);
+    background-color: var(--blanco-calido);
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 5px 20px rgba(62, 39, 35, 0.08);
@@ -387,7 +421,7 @@ ul {
 .product-title {
     font-family: var(--font-titulos);
     font-size: 1.8rem;
-    color: var(--cafe-oscuro);
+    color: var(--espresso);
     margin-bottom: 15px;
 }
 
@@ -402,18 +436,18 @@ ul {
 
 .product-list li {
     padding: 8px 0;
-    color: var(--cafe-oscuro);
+    color: var(--espresso);
     font-weight: 400;
 }
 
 /* ---------- Origen ---------- */
 .section-origen {
-    background-color: var(--verde-hoja);
-    color: var(--blanco-crema);
+    background-color: var(--verde-pino);
+    color: var(--blanco-calido);
 }
 
 .section-origen .section-title {
-    color: var(--blanco-crema);
+    color: var(--blanco-calido);
 }
 
 .section-origen .section-subtitle {
@@ -465,7 +499,7 @@ ul {
     font-family: var(--font-titulos);
     font-size: 2.2rem;
     font-weight: 700;
-    color: var(--dorado);
+    color: var(--rojo-cereza);
 }
 
 .stat-label {
@@ -480,12 +514,12 @@ ul {
 
 /* ---------- Mujeres campesinas ---------- */
 .section-mujeres {
-    background-color: var(--terracota);
-    color: var(--blanco-crema);
+    background-color: var(--rojo-cereza);
+    color: var(--blanco-calido);
 }
 
 .section-mujeres .section-title {
-    color: var(--blanco-crema);
+    color: var(--blanco-calido);
 }
 
 .section-mujeres .section-subtitle {
@@ -503,7 +537,7 @@ ul {
     font-family: var(--font-titulos);
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: var(--dorado);
+    color: var(--rojo-cereza);
 }
 
 .mujeres-text {
@@ -533,7 +567,7 @@ ul {
 
 .value-item h4 {
     font-family: var(--font-titulos);
-    color: var(--dorado);
+    color: var(--rojo-cereza);
     margin-bottom: 5px;
 }
 
@@ -565,7 +599,7 @@ ul {
     top: 0;
     bottom: 0;
     width: 3px;
-    background-color: var(--cafe-claro);
+    background-color: var(--crema-oscura);
     transform: translateX(-50%);
 }
 
@@ -591,7 +625,7 @@ ul {
     top: 20px;
     width: 50px;
     height: 50px;
-    background-color: var(--esmeralda);
+    background-color: var(--azul-petroleo);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -611,7 +645,7 @@ ul {
 }
 
 .timeline-content {
-    background-color: var(--blanco-crema);
+    background-color: var(--blanco-calido);
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 5px 20px rgba(62, 39, 35, 0.08);
@@ -619,7 +653,7 @@ ul {
 
 .timeline-content h3 {
     font-family: var(--font-titulos);
-    color: var(--cafe-oscuro);
+    color: var(--espresso);
     margin-bottom: 8px;
 }
 
@@ -630,7 +664,7 @@ ul {
 
 /* ---------- Galería - Carrusel ---------- */
 .section-galeria {
-    background-color: var(--blanco-crema);
+    background-color: var(--blanco-calido);
 }
 
 .carousel {
@@ -662,7 +696,7 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(62, 39, 35, 0.7);
-    color: var(--crema);
+    color: var(--crema-suave);
     border: none;
     width: 50px;
     height: 50px;
@@ -674,7 +708,7 @@ ul {
 }
 
 .carousel-btn:hover {
-    background-color: var(--esmeralda);
+    background-color: var(--azul-petroleo);
 }
 
 .carousel-prev {
@@ -687,7 +721,7 @@ ul {
 
 /* ---------- Testimonios ---------- */
 .section-testimonios {
-    background-color: var(--crema);
+    background-color: var(--crema-suave);
 }
 
 .testimonios-grid {
@@ -697,7 +731,7 @@ ul {
 }
 
 .testimonio-card {
-    background-color: var(--blanco-crema);
+    background-color: var(--blanco-calido);
     border-radius: 15px;
     padding: 35px;
     box-shadow: 0 5px 20px rgba(62, 39, 35, 0.08);
@@ -709,7 +743,7 @@ ul {
 }
 
 .testimonio-stars {
-    color: var(--dorado);
+    color: var(--rojo-cereza);
     font-size: 1.3rem;
     margin-bottom: 15px;
 }
@@ -721,7 +755,7 @@ ul {
 }
 
 .testimonio-author {
-    border-top: 2px solid var(--crema);
+    border-top: 2px solid var(--crema-suave);
     padding-top: 15px;
 }
 
@@ -729,22 +763,22 @@ ul {
     display: block;
     font-family: var(--font-titulos);
     font-weight: 600;
-    color: var(--cafe-oscuro);
+    color: var(--espresso);
 }
 
 .author-city {
-    color: var(--cafe-claro);
+    color: var(--crema-oscura);
     font-size: 0.9rem;
 }
 
 /* ---------- Contacto ---------- */
 .section-contacto {
-    background-color: var(--cafe-oscuro);
-    color: var(--crema);
+    background-color: var(--espresso);
+    color: var(--crema-suave);
 }
 
 .section-contacto .section-title {
-    color: var(--crema);
+    color: var(--crema-suave);
 }
 
 .section-contacto .section-subtitle {
@@ -761,7 +795,7 @@ ul {
     font-family: var(--font-titulos);
     font-size: 1.6rem;
     margin-bottom: 30px;
-    color: var(--dorado);
+    color: var(--rojo-cereza);
 }
 
 .contacto-item {
@@ -777,7 +811,7 @@ ul {
 
 .contacto-item h4 {
     font-family: var(--font-titulos);
-    color: var(--crema);
+    color: var(--crema-suave);
     margin-bottom: 3px;
 }
 
@@ -787,10 +821,10 @@ ul {
 
 /* Formulario */
 .contacto-form {
-    background-color: var(--blanco-crema);
+    background-color: var(--blanco-calido);
     border-radius: 15px;
     padding: 40px;
-    color: var(--cafe-oscuro);
+    color: var(--espresso);
 }
 
 .form-group {
@@ -802,26 +836,26 @@ ul {
     font-family: var(--font-titulos);
     font-weight: 600;
     margin-bottom: 8px;
-    color: var(--cafe-oscuro);
+    color: var(--espresso);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 12px 15px;
-    border: 2px solid var(--cafe-claro);
+    border: 2px solid var(--crema-oscura);
     border-radius: 8px;
     font-family: var(--font-texto);
     font-size: 1rem;
-    background-color: var(--crema);
-    color: var(--cafe-oscuro);
+    background-color: var(--crema-suave);
+    color: var(--espresso);
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--esmeralda);
+    border-color: var(--azul-petroleo);
 }
 
 .form-group input.error,
@@ -838,7 +872,7 @@ ul {
 }
 
 .form-success {
-    background-color: var(--esmeralda);
+    background-color: var(--azul-petroleo);
     color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -849,8 +883,8 @@ ul {
 
 /* ---------- Footer ---------- */
 .footer {
-    background-color: var(--cafe-oscuro);
-    color: var(--crema);
+    background-color: var(--espresso);
+    color: var(--crema-suave);
     padding: 60px 0 0;
 }
 
@@ -867,7 +901,7 @@ ul {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 15px;
-    background-color: var(--crema);
+    background-color: var(--crema-suave);
 }
 
 .footer-text {
@@ -879,7 +913,7 @@ ul {
 .footer-social h4 {
     font-family: var(--font-titulos);
     margin-bottom: 20px;
-    color: var(--dorado);
+    color: var(--rojo-cereza);
 }
 
 .footer-links ul li {
@@ -892,7 +926,7 @@ ul {
 }
 
 .footer-links ul li a:hover {
-    color: var(--esmeralda);
+    color: var(--azul-petroleo);
 }
 
 .social-icons {
@@ -918,6 +952,30 @@ ul {
 .footer-bottom p {
     color: rgba(245, 239, 230, 0.6);
     font-size: 0.9rem;
+}
+
+/* ---------- Botón flotante de WhatsApp ---------- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.55);
 }
 
 /* ---------- Animaciones ---------- */
@@ -994,7 +1052,7 @@ ul {
         left: -100%;
         width: 100%;
         height: calc(100vh - 75px);
-        background-color: var(--cafe-oscuro);
+        background-color: var(--espresso);
         transition: left 0.3s ease;
         padding: 30px;
     }

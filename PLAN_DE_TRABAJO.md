@@ -139,7 +139,7 @@ Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.ph
 | **Galería (carrusel)** | Todas las 5 imágenes |
 | **Testimonios / fondo** | `img/Imagen 1 cafe.jpeg` |
 
-> ⚠️ **Nota:** Las rutas deben ser relativas (`img/Imagen 3 cafe.jpeg`) para que funcionen en GitHub Pages. Los nombres de archivo contienen espacios, por lo que en HTML deben escaparse como `img/Imagen%203%20cafe.jpeg` o renombrar los archivos sin espacios (recomendado: `img/imagen-3-cafe.jpeg`).
+> ⚠️ **Nota:** Las rutas deben ser relativas (`img/Imagen 3 cafe.jpeg`) para que funcionen en GitHub Pages. Los nombres de archivo contienen espacios, por lo que en HTML deben escaparse como `img/Imagen%203%20cafe.jpeg`.
 
 ### 🟤 Colores Principales (tonos de café)
 
@@ -426,6 +426,51 @@ Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.ph
 
 ---
 
+## 🖼️ Descripción de las Piezas Visuales de la Marca
+
+> **Nota:** Esta sección documenta la descripción exacta de cada pieza gráfica que compone la identidad visual de la marca, basada en los archivos de imagen del proyecto. Sirve como referencia para el equipo de desarrollo al momento de integrar los assets en la página.
+
+### 1. `logo.jpeg` — Logotipo Principal
+
+- Es un **sello circular** con un fondo que muestra un paisaje de las **montañas del Huila al atardecer**.
+- En la parte superior lleva el texto **"CAFÉ ARTESANAL DEL HUILA"** sobre bloques texturizados en **verde y rojo**, acompañados de una **rama con cerezas de café**.
+- El elemento más destacado es un **tierno oso amigable** que sostiene una **taza azul de café**, rodeado de vegetación y **flores blancas de cafeto**.
+
+**Uso en la página:** Header (esquina superior), footer, favicon, sello de producto.
+
+---
+
+### 2. `imagen 4 cafe.jpeg` — Banner / Pieza Principal
+
+- Formato **horizontal** con un fondo de **paisaje montañoso al atardecer** y una **mesa rústica de madera** con granos de café esparcidos, ramas verdes y una flor blanca.
+- En el centro superior muestra el título principal **"CAFÉ ARTESANAL DEL HUILA"** con tipografía gruesa.
+- Muestra el **empaque (doypack)** de color **kraft/beige** con la ilustración del oso y la marca **"Pedaleando sin parar"**.
+- Incluye el **sello circular** a la derecha (**"Hecho con amor por mujeres campesinas"**) y **tres viñetas** a la izquierda (**"Cosecha selecta"**, **"De las montañas del Huila"**, **"Apoya a mujeres campesinas"**).
+
+**Uso en la página:** Fondo del Hero Banner y separadores de sección.
+
+---
+
+### 3. `Imagen 1 cafe_2.jpeg` y `Imagen 3_2.jpeg` — Afiches Publicitarios
+
+- Formato **vertical tipo afiche** que anuncia **"VENTA AQUÍ CAFÉ ARTESANAL DEL HUILA - 100% Orgánico"**.
+- Integran de forma prominente el **empaque de café**, una **taza de cerámica rústica** con el logotipo y un **tazón con granos tostados**.
+- Una de las variantes incluye datos de **ubicación física** (**"Conjunto Morichal Torre 9, Apto 104"**).
+- Cierran en la parte inferior con una **barra oscura corporativa** que destaca la llamada a la acción: **"PÍDELO POR WHATSAPP"** junto al icono verde y el número **312 472 4794**.
+
+**Uso en la página:** Material promocional, sección de contacto y llamadas a la acción.
+
+---
+
+### 4. `Imagen 2 cafe_2.jpeg` — Fotografía de Detalle
+
+- **Plano cercano (close-up)** sobre una superficie de **madera rústica** cubierta de ramas con **frutos rojos** y granos maduros.
+- Muestra el empaque etiquetado como **"Café Emeraldita"** (**Café de origen del Huila, 100% Artesanal, 250 g**) junto a una **taza blanca con café recién hecho** y su **capa de crema de espresso**.
+
+**Uso en la página:** Vitrina de producto, sección "Nuestro Café" y galería.
+
+---
+
 ## 🧩 Secciones de la Página (index.html)
 
 1. **Barra de navegación (Navbar)**
@@ -495,17 +540,16 @@ Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.ph
 - [x] Crear o conseguir el logo de la marca (`img/Logo.jpeg`)
 - [x] Definir paleta de colores y tipografías definitivas (línea gráfica oficial)
 
-> **Pendiente para Fase 2:** Renombrar imágenes sin espacios (`img/logo.jpeg`, `img/hero.jpeg`, `img/producto.jpeg`, `img/origen.jpeg`, `img/mujeres.jpeg`) y actualizar `index.html` con rutas reales y textos finales.
-
-### Fase 2 — Estructura HTML (Día 2) 🔄 EN CURSO
+### Fase 2 — Estructura HTML (Día 2) ✅ COMPLETADA
 - [x] Crear `index.html` con todas las secciones (ya existe)
 - [x] Estructura semántica correcta (header, main, section, footer) (ya existe)
-- [ ] Insertar textos e imágenes provisionales → **PENDIENTE:** actualizar con textos finales y rutas de imágenes reales (aún usa placeholders `picsum.photos`)
+- [x] Insertar textos e imágenes provisionales → **COMPLETADO:** se actualizó con textos finales (Café Emeraldita / Café Artesanal del Huila), rutas de imágenes reales (`img/logo.jpeg`, `img/hero.jpeg`, `img/producto.jpeg`, `img/origen.jpeg`, `img/mujeres.jpeg`), sellos ("Hecho con amor por mujeres campesinas", "100% Orgánico"), botón flotante de WhatsApp y datos de contacto reales (312 472 4794, Conjunto Morichal)
+- [x] Renombrar imágenes sin espacios → **COMPLETADO:** los archivos `img/Imagen 1 cafe.jpeg`, `img/Imagen 2 cafe.jpeg`, `img/Imagen 3.jpeg` e `img/imagen 4 cafe.jpeg` fueron renombrados a `img/producto.jpeg`, `img/origen.jpeg`, `img/hero.jpeg` e `img/mujeres.jpeg` respectivamente. El archivo vacío `img/.jpeg` fue eliminado.
 
-### Fase 3 — Estilos CSS (Día 3-4) 🔄 EN CURSO
+### Fase 3 — Estilos CSS (Día 3-4) ✅ COMPLETADA
 - [x] Crear `css/styles.css` (ya existe)
 - [x] Diseño responsive (mobile-first) (ya implementado)
-- [ ] Aplicar paleta de colores y tipografías → **PENDIENTE:** el CSS aún usa la paleta "esmeralda" anterior, falta aplicar la línea gráfica oficial (crema `#F7F4EF`, espresso `#2C1D11`, azul petróleo `#1B4965`, rojo vino `#A62B2B`, verde pino `#2D5A27`)
+- [x] Aplicar paleta de colores y tipografías → **COMPLETADO:** el CSS ya usa la línea gráfica oficial (crema `#F7F4EF`, espresso `#2C1D11`, azul petróleo `#1B4965`, rojo vino `#A62B2B`, verde pino `#2D5A27`) y las tipografías `Archivo Black` (títulos) y `Poppins` (texto)
 - [x] Estilizar todas las secciones y componentes (ya implementado)
 
 ### Fase 4 — Interactividad JS (Día 5)
