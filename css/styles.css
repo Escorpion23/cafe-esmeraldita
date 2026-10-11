@@ -1,4 +1,4 @@
-/* ============================================
+ a /* ============================================
    CAFÉ EMERALDITA - Hoja de estilos principal
    Línea gráfica oficial - Café Artesanal del Huila
    ============================================ */
@@ -434,20 +434,22 @@ select:focus-visible {
 /* Product showcase */
 .product-showcase {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 50px;
+    grid-template-columns: 1fr;
+    gap: 25px;
     align-items: center;
     background-color: var(--blanco-calido);
     border-radius: 20px;
-    padding: 50px;
+    padding: 30px;
     box-shadow: 0 5px 20px rgba(62, 39, 35, 0.08);
 }
 
 .product-image img {
     border-radius: 15px;
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    max-height: 500px;
 }
 
 .product-title {
@@ -459,17 +461,32 @@ select:focus-visible {
 
 .product-text {
     color: var(--cafe-medio);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: center;
 }
 
 .product-list {
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
 .product-list li {
     padding: 8px 0;
     color: var(--espresso);
     font-weight: 400;
+}
+
+.product-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 /* ---------- Origen ---------- */
@@ -865,7 +882,7 @@ select:focus-visible {
 
 .footer-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
     padding-bottom: 40px;
 }
@@ -884,8 +901,7 @@ select:focus-visible {
     max-width: 300px;
 }
 
-.footer-links h4,
-.footer-social h4 {
+.footer-links h4 {
     font-family: var(--font-titulos);
     margin-bottom: 20px;
     color: var(--rojo-cereza);
@@ -902,20 +918,6 @@ select:focus-visible {
 
 .footer-links ul li a:hover {
     color: var(--azul-petroleo);
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover {
-    transform: scale(1.2);
 }
 
 .footer-bottom {
@@ -996,11 +998,6 @@ select:focus-visible {
 
     .footer-container {
         grid-template-columns: 1fr 1fr;
-    }
-
-    /* Ajustar alturas de imágenes en tablet */
-    .product-image img {
-        height: 400px;
     }
 
     .origen-image img {
@@ -1086,16 +1083,21 @@ select:focus-visible {
     }
 
     /* Ajustar alturas de imágenes en móvil */
-    .product-image img {
-        height: 320px;
-    }
-
     .origen-image img {
         height: 300px;
     }
 
     .mujeres-image img {
         height: 320px;
+    }
+
+    .product-details {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .product-side {
+        align-items: flex-start;
     }
 
     .footer-container {
@@ -1105,10 +1107,6 @@ select:focus-visible {
 
     .footer-text {
         margin: 0 auto;
-    }
-
-    .social-icons {
-        justify-content: center;
     }
 }
 
@@ -1137,7 +1135,7 @@ select:focus-visible {
 
     .product-showcase,
     .contacto-form {
-        padding: 25px;
+        padding: 30px;
     }
 
     .section-title {
