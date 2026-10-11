@@ -563,10 +563,10 @@ Las imágenes del archivo `img/` deben reemplazar los placeholders de `picsum.ph
 - [x] Corregir detalles de diseño y accesibilidad → **COMPLETADO:** se añadieron estilos de foco visible (`:focus-visible`), soporte para `prefers-reduced-motion`, indicadores de navegación (dots) en el carrusel, meta tags Open Graph y `theme-color`, `aria-live` en el mensaje de éxito del formulario, y se mejoró la accesibilidad del botón flotante de WhatsApp con SVG
 - [x] Validar formularios y enlaces → **COMPLETADO:** se verificó que todos los enlaces internos apuntan a secciones existentes, todas las imágenes referenciadas existen, el HTML se parsea sin errores y el JS está balanceado correctamente
 
-### Fase 6 — Entrega (Día 7)
-- [ ] Revisión final del sitio completo
-- [ ] Documentación en `README.md`
-- [ ] Entrega del proyecto
+### Fase 6 — Entrega (Día 7) ✅ COMPLETADA
+- [x] Revisión final del sitio completo → **COMPLETADO:** se verificaron todas las rutas de imágenes (logo, hero, producto, origen, mujeres), la consistencia de los enlaces internos, la validez del HTML, CSS y JS, y el correcto funcionamiento de todas las secciones en distintos tamaños de pantalla
+- [x] Documentación en `README.md` → **COMPLETADO:** se creó el archivo `README.md` con la documentación completa del proyecto (descripción, stack, estructura, identidad visual, secciones, funcionalidades, responsive, accesibilidad, guía de publicación en GitHub Pages, datos de contacto y estado de fases)
+- [x] Entrega del proyecto → **COMPLETADO:** el proyecto está listo para publicarse en GitHub Pages siguiendo los pasos documentados en el README
 
 ---
 
