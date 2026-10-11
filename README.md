@@ -2,6 +2,8 @@
 
 Página web oficial de **Café Esmeraldita**, un café de especialidad cultivado en **Tello, Huila (Colombia)** y elaborado por **mujeres campesinas**.
 
+> 🌐 **Sitio en vivo:** [https://Escorpion23.github.io/cafe-esmeraldita/](https://Escorpion23.github.io/cafe-esmeraldita/)
+
 ---
 
 ## 🎯 Descripción del Proyecto
@@ -139,8 +141,10 @@ El sitio es totalmente responsive con breakpoints en:
 3. **Activar GitHub Pages:** Settings → Pages → Source: `main` / `/ (root)` → Save.
 4. **URL del sitio:**
    ```
-   https://USUARIO.github.io/cafe-esmeraldita/
+   https://Escorpion23.github.io/cafe-esmeraldita/
    ```
+
+> 🌐 **Visita el sitio:** [https://Escorpion23.github.io/cafe-esmeraldita/](https://Escorpion23.github.io/cafe-esmeraldita/)
 
 > ⚠️ **Importante:** Todas las rutas son relativas (`img/...`, `css/...`, `js/...`) para que funcionen en GitHub Pages.
 
