@@ -148,7 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
         const nombre = document.getElementById('nombre');
-        const email = document.getElementById('email');
         const telefono = document.getElementById('telefono');
         const mensaje = document.getElementById('mensaje');
         const formSuccess = document.getElementById('formSuccess');
@@ -171,18 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return false;
             }
             clearError(nombre, errorEl);
-            return true;
-        };
-
-        // Validar email
-        const validateEmail = () => {
-            const errorEl = document.getElementById('error-email');
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email.value.trim())) {
-                setError(email, errorEl, 'Por favor ingresa un correo electrónico válido.');
-                return false;
-            }
-            clearError(email, errorEl);
             return true;
         };
 
@@ -213,7 +200,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Validación en tiempo real
         nombre.addEventListener('blur', validateNombre);
-        email.addEventListener('blur', validateEmail);
         telefono.addEventListener('blur', validateTelefono);
         mensaje.addEventListener('blur', validateMensaje);
 
@@ -222,11 +208,10 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             const isNombreValid = validateNombre();
-            const isEmailValid = validateEmail();
             const isTelefonoValid = validateTelefono();
             const isMensajeValid = validateMensaje();
 
-            if (isNombreValid && isEmailValid && isTelefonoValid && isMensajeValid) {
+            if (isNombreValid && isTelefonoValid && isMensajeValid) {
                 // Mostrar mensaje de éxito
                 if (formSuccess) {
                     formSuccess.hidden = false;
